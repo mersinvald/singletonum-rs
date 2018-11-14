@@ -1,11 +1,11 @@
 [package]
 name = "singletonum"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Mike Lubinets <lubinetsm@yandex.ru>"]
 license = "MIT"
 repository = "https://github.com/mersinvald/singleton-rs"
 description = "singleton derive macro"
 
 [dependencies]
-singletonum-derive = { path = "../singletonum-derive", version = "0.1.0" }
+singletonum-derive = { path = "../singletonum-derive", version = "0.2.0" }
 once_cell = "0.1.6"
