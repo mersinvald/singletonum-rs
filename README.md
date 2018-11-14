@@ -1,4 +1,8 @@
 ### Singleton Derive 
+[![Crates.io](https://img.shields.io/crates/v/singletonum.svg)](https://crates.io/crates/singletonum)
+
+[Documentation](https://docs.rs/crate/singletonum)
+
 This crate provides a convenient API to make a singleton from any `struct` with just a `#[derive(Singleton)]`
 
 ### Example
