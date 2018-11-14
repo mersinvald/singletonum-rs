@@ -3,8 +3,8 @@ This crate provides a convenient API to make a singleton from any `struct` with 
 
 ### Example
 ```rust
-extern crate singleton;
-use singleton::{Singleton, SingletonInit};
+extern crate singletonum;
+use singletonum::{Singleton, SingletonInit};
 
 #[derive(Debug, PartialEq, Singleton)]
 struct SampleSingleton {
