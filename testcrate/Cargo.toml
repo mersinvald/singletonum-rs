@@ -6,4 +6,4 @@ license = "MIT"
 repository = "https://github.com/mersinvald/singleton-rs"
 
 [dependencies]
-singleton = { path = "../singleton" }
+singletonum = { path = "../singletonum" }

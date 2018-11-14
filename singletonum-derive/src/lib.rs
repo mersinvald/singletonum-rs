@@ -32,9 +32,9 @@ fn impl_singleton(ast: &syn::DeriveInput) -> quote::Tokens {
     let static_var_name = format!("{}_SINGLETON", name.as_ref().to_shouty_snake_case());
     let static_var_ident = Ident::from(static_var_name);
     quote! {
-        static #static_var_ident: singleton::OnceCell<#name> = singleton::OnceCell::INIT;
+        static #static_var_ident: singletonum::OnceCell<#name> = singletonum::OnceCell::INIT;
 
-        impl singleton::Singleton for #name {
+        impl singletonum::Singleton for #name {
             fn get_instance(init: Self::Init) -> &'static Self {
                 #static_var_ident.get_or_init(|| Self::init(init))
             }

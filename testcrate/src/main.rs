@@ -1,5 +1,5 @@
-extern crate singleton;
-use singleton::{Singleton, SingletonInit};
+extern crate singletonum;
+use singletonum::{Singleton, SingletonInit};
 
 #[derive(Debug, PartialEq, Singleton)]
 struct SampleSingleton {
@@ -27,3 +27,5 @@ mod tests {
         );
     }
 }
+
+fn main() {}

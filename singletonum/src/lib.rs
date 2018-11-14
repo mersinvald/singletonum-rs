@@ -1,8 +1,8 @@
 #[macro_use]
-extern crate singleton_derive;
+extern crate singletonum_derive;
 extern crate once_cell;
 
-pub use singleton_derive::*;
+pub use singletonum_derive::*;
 pub use once_cell::sync::OnceCell;
 
 pub trait Singleton: SingletonInit {

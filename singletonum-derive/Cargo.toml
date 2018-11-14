@@ -1,5 +1,5 @@
 [package]
-name = "singleton-derive"
+name = "singletonum-derive"
 version = "0.1.0"
 authors = ["Mike Lubinets <lubinetsm@yandex.ru>"]
 license = "MIT"
