@@ -1,6 +1,6 @@
 [package]
 name = "singletonum-derive"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Mike Lubinets <lubinetsm@yandex.ru>"]
 license = "MIT"
 repository = "https://github.com/mersinvald/singleton-rs"
