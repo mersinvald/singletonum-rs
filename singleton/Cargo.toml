@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Mike Lubinets <lubinetsm@yandex.ru>"]
 license = "MIT"
 repository = "https://github.com/mersinvald/singleton-rs"
+description = "singleton derive macro"
 
 [dependencies]
 singleton-derive = { path = "../singleton-derive", version = "0.1.0" }

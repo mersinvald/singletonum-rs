@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Mike Lubinets <lubinetsm@yandex.ru>"]
 license = "MIT"
 repository = "https://github.com/mersinvald/singleton-rs"
+description = "singleton derive macro (this is an internal crate, you don't need to connect it explicitly)"
 
 [lib]
 doctest = false
