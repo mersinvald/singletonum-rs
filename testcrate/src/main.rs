@@ -8,8 +8,8 @@ struct SampleSingleton {
 
 impl SingletonInit for SampleSingleton {
     type Init = String;
-    fn init(init: String) -> Self {
-        SampleSingleton { inner: init }
+    fn init(init: &String) -> Self {
+        SampleSingleton { inner: init.clone() }
     }
 }
 
@@ -19,8 +19,8 @@ mod tests {
 
     #[test]
     fn initialize_and_get() {
-        SampleSingleton::get_instance(String::from("hello, world!"));
-        let instance = SampleSingleton::get_instance(String::from("hello, world!"));
+        SampleSingleton::get_instance(&String::from("hello, world!"));
+        let instance = SampleSingleton::get_instance(&String::from("hello, world!"));
         assert_eq!(
             instance,
             &SampleSingleton { inner: String::from("hello, world!") }

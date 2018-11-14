@@ -35,7 +35,7 @@ fn impl_singleton(ast: &syn::DeriveInput) -> quote::Tokens {
         static #static_var_ident: singletonum::OnceCell<#name> = singletonum::OnceCell::INIT;
 
         impl singletonum::Singleton for #name {
-            fn get_instance(init: Self::Init) -> &'static Self {
+            fn get_instance(init: &Self::Init) -> &'static Self {
                 #static_var_ident.get_or_init(|| Self::init(init))
             }
         }
