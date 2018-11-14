@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "singleton",
+    "singleton-derive",
+    "testcrate"
+]

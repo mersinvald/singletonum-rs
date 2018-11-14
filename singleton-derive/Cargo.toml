@@ -1,0 +1,17 @@
+[package]
+name = "singleton-derive"
+version = "0.1.0"
+authors = ["Mike Lubinets <lubinetsm@yandex.ru>"]
+license = "MIT"
+repository = "https://github.com/mersinvald/singleton-rs"
+
+[lib]
+doctest = false
+proc-macro = true
+path = "src/lib.rs"
+
+[dependencies]
+syn = "0.11"
+quote = "0.3"
+failure = "0.1.2"
+heck = "0.3.0"
