@@ -2,8 +2,8 @@
 extern crate singletonum_derive;
 extern crate once_cell;
 
-pub use singletonum_derive::*;
 pub use once_cell::sync::OnceCell;
+pub use singletonum_derive::*;
 
 pub trait Singleton: SingletonInit {
     fn get_instance(init: &Self::Init) -> &'static Self;
