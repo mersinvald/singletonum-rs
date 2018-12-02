@@ -1,16 +1,16 @@
 #[macro_use]
 extern crate quote;
-extern crate syn;
 extern crate proc_macro;
+extern crate syn;
 #[macro_use]
 extern crate failure;
 extern crate heck;
 
 use failure::Error;
-use syn::Ident;
+use heck::ShoutySnakeCase;
 use proc_macro::TokenStream;
 use quote::quote;
-use heck::ShoutySnakeCase;
+use syn::Ident;
 
 #[proc_macro_derive(Singleton)]
 pub fn singleton_derive(input: TokenStream) -> TokenStream {

@@ -9,7 +9,9 @@ struct SampleSingleton {
 impl SingletonInit for SampleSingleton {
     type Init = String;
     fn init(init: &String) -> Self {
-        SampleSingleton { inner: init.clone() }
+        SampleSingleton {
+            inner: init.clone(),
+        }
     }
 }
 
@@ -23,7 +25,9 @@ mod tests {
         let instance = SampleSingleton::get_instance(&String::from("hello, world!"));
         assert_eq!(
             instance,
-            &SampleSingleton { inner: String::from("hello, world!") }
+            &SampleSingleton {
+                inner: String::from("hello, world!")
+            }
         );
     }
 }
